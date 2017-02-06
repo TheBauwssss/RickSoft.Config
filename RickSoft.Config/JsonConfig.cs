@@ -17,7 +17,7 @@ namespace RickSoft.Config
         {
             string path = GetFilePath(ApplicationName);
 
-            if (!Directory.Exists(path))
+            if (!File.Exists(path))
             {
                 logger.Warn("Unable to reload json config file becase the file does not exist anymore!");
                 return;
